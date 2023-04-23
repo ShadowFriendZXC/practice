@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Случайный цвет</title>
+
+    <script type="text/javascript">
+        function rndNmb(){
+          return Math.floor(Math.random() * 255) + 0;
+        }
+        function rndColor(){
+          document.getElementById('main').style.background =  'rgb('+rndNmb()+', '+rndNmb()+', '+rndNmb()+')';
+        }
+        window.onload = function () {
+          document.getElementsByName("w")[0].addEventListener('change', changeWidth);
+          document.getElementsByName("h")[0].addEventListener('change', changeHeight);
+
+          function changeWidth(){
+            document.getElementById('main').style.width = ''+this.value+'px';
+          }
+          function changeHeight(){
+            document.getElementById('main').style.height = ''+this.value+'px';
+          }
+        }
+      </script>
+      <style>
+        .mid{
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+        .choose{
+          font-size: 24px;
+          vertical-align: middle;
+          line-height: 3rem;
+          height: 3rem;
+        }
+        #main{
+          width: 100px;
+          height: 100px;
+          background: rgb(252, 190, 36);
+          margin: 2rem auto 0 auto;
+          border-radius: 10px;
+          border: 2px solid black;
+        }
+        body{
+          background: rgb(21, 34, 46);
+          color: RGB(252, 190, 36);
+          font-family: Verdana, sans-serif;
+        }
+        h1{
+          cursor: pointer;
+          user-select: none;
+        }
+        hr{
+          height: 6px;
+          background-image: linear-gradient(90deg, rgba(21, 34, 46, 1), rgba(252, 190, 36, 1) 50%, rgba(21, 34, 46, 1));
+          width: 40%;
+          border:0;
+        }
+      </style>
+    </head>
+    <body>
+      <form>
+        <div class='mid'>
+            <h1 onmousedown="rndColor()">Случайный цвет</h1>
+            <p class='choose'>Введите ширину:&nbsp<input type="number" name="w" placeholder="100"></p>
+            <p class='choose'>Введите высоту: &nbsp<input type="number" name="h" placeholder="100"></p>
+            <hr />
+            <div id='main'></div>
+        </div>
+      </form>
+    </body>
+  </html>
