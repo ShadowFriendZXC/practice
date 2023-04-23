@@ -1,32 +1,67 @@
 [
     {
-    "price": 9685,
-    "quantity": 3,
+    "price": 16184,
+    "quantity": 6,
     "name": "Бумага для принтера"
     },
     {
-    "price": 13896,
-    "quantity": 5,
+    "price": 10340,
+    "quantity": 4,
     "name": "Шкаф книжный"
     },
     {
-    "price": 14739,
-    "quantity": 5,
+    "price": 15735,
+    "quantity": 6,
     "name": "Канцелярский набор"
     },
     {
-    "price": 3241,
-    "quantity": 7,
-    "name": "Портфель"
+    "price": 16634,
+    "quantity": 6,
+    "name": "Вода бутилированная"
     },
     {
-    "price": 5699,
-    "quantity": 2,
-    "name": "Парта"
+    "price": 13037,
+    "quantity": 5,
+    "name": "Маркеры офисные"
     },
     {
-    "price": 784,
-    "quantity": 16,
-    "name": "Стул ученический"
+    "price": 10340,
+    "quantity": 4,
+    "name": "Стул офисный"
+    },
+    {
+    "price": 13936,
+    "quantity": 5,
+    "name": "Бумага туалетная"
+    },
+    {
+    "price": 10340,
+    "quantity": 4,
+    "name": "Телевизор ЖК"
+    },
+    {
+    "price": 13936,
+    "quantity": 5,
+    "name": "Лазерный принтер"
+    },
+    {
+    "price": 14835,
+    "quantity": 5,
+    "name": "Стол компьютерный"
+    },
+    {
+    "price": 15735,
+    "quantity": 6,
+    "name": "Дверь межкомнатная"
+    },
+    {
+    "price": 8991,
+    "quantity": 3,
+    "name": "Монитор 22″"
+    },
+    {
+    "price": 12138,
+    "quantity": 4,
+    "name": "Системный блок"
     }
 ]
